@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent("com.example.moneysplitter.Events");
+                        Intent intent = new Intent("com.example.moneysplitter.LoginIn");
                         startActivity(intent);
                     }
                 }

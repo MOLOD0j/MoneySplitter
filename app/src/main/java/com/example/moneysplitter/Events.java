@@ -24,7 +24,7 @@ public class Events extends AppCompatActivity {
 
     public void addListenerOnButton() {
         go_to_new_room = (Button) findViewById(R.id.button);
-        go_to_room = (Button) findViewById(R.id.button7);
+        go_to_room = (Button) findViewById(R.id.inProfile);
         ProfFav = (ImageButton) findViewById(R.id.imageButton2);
         Favor = (ImageButton) findViewById(R.id.imageButton4);
 

@@ -9,6 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MoneySplitter">
+        <activity android:name=".LoginIn">
+            <intent-filter>
+                <action android:name="com.example.moneysplitter.LoginIn" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".NewPosition">
             <intent-filter>
                 <action android:name="com.example.moneysplitter.NewPosition" />
@@ -16,14 +23,14 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Room" >
+        <activity android:name=".Room">
             <intent-filter>
                 <action android:name="com.example.moneysplitter.Room" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".NewRoom" >
+        <activity android:name=".NewRoom">
             <intent-filter>
                 <action android:name="com.example.moneysplitter.NewRoom" />
 
@@ -96,13 +103,6 @@
         <activity android:name=".Friends">
             <intent-filter>
                 <action android:name="com.example.moneysplitter.Friends" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".loginInput">
-            <intent-filter>
-                <action android:name="com.example.moneysplitter.loginInput" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

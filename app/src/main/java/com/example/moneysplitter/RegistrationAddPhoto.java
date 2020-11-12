@@ -35,7 +35,7 @@ public class RegistrationAddPhoto extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent("com.example.moneysplitter.Events");
+                        Intent intent = new Intent("com.example.moneysplitter.Profile");
                         startActivity(intent);
                     }
                 }

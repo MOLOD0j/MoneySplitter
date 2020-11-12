@@ -7,18 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class loginInput extends AppCompatActivity {
+public class LoginIn extends AppCompatActivity {
 
     private Button enter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_input);
+        setContentView(R.layout.activity_login_in);
         addListenerOnButton();
     }
     public void addListenerOnButton () {
-        enter = (Button) findViewById(R.id.butInput);
+        enter = (Button) findViewById(R.id.inProfile);
 
         enter.setOnClickListener(
                 new View.OnClickListener() {

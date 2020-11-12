@@ -19,14 +19,14 @@
         android:text="Расходы и Доходы"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintBottom_toTopOf="@+id/inProfile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText,UnknownId" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/inProfile"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Посмотреть расходы"
@@ -44,7 +44,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7" />
+        app:layout_constraintTop_toBottomOf="@+id/inProfile" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
