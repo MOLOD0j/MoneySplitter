@@ -6,39 +6,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
-public class Favorites extends AppCompatActivity {
+public class loginInput extends AppCompatActivity {
 
-    private ImageButton ProfFav, Event;
+    private Button enter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_favorites);
+        setContentView(R.layout.activity_login_input);
         addListenerOnButton();
     }
-
     public void addListenerOnButton () {
+        enter = (Button) findViewById(R.id.butInput);
 
-        ProfFav = (ImageButton) findViewById(R.id.ProfFav);
-        Event = (ImageButton) findViewById(R.id.Event);
-
-        ProfFav.setOnClickListener(
+        enter.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent("com.example.moneysplitter.Profile");
-                        startActivity(intent);
-                    }
-                }
-        );
-
-        Event.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent("com.example.moneysplitter.Events");
                         startActivity(intent);
                     }
                 }

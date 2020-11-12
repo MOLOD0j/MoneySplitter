@@ -173,11 +173,11 @@
         android:layout_marginTop="28dp"
         android:layout_marginEnd="14dp"
         android:text="Жен."
-        app:layout_constraintEnd_toEndOf="@+id/button11"
+        app:layout_constraintEnd_toEndOf="@+id/BackStart"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/BackStart"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="26dp"
@@ -185,13 +185,13 @@
         android:layout_marginEnd="98dp"
         android:layout_marginBottom="3dp"
         android:text="Назад"
-        app:layout_constraintBottom_toBottomOf="@+id/button12"
-        app:layout_constraintEnd_toStartOf="@+id/button12"
+        app:layout_constraintBottom_toBottomOf="@+id/Next"
+        app:layout_constraintEnd_toStartOf="@+id/Next"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/Next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -199,7 +199,7 @@
         android:text="Продолжить"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button11" />
+        app:layout_constraintStart_toEndOf="@+id/BackStart" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"

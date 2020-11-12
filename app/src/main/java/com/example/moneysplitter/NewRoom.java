@@ -7,38 +7,36 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class RegistrationAddPhoto extends AppCompatActivity {
+public class NewRoom extends AppCompatActivity {
 
-    private Button BackReg;
-    private Button NextEvents;
+    private Button go_back, go_new_position;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registration_add_photo);
-        addListenerOnButton();
+        setContentView(R.layout.activity_new_room);
+        addListenerOnButton ();
     }
-    public void addListenerOnButton () {
-        BackReg = (Button) findViewById(R.id.BackReg);
-        NextEvents = (Button) findViewById(R.id.NextEvents);
-
-        BackReg.setOnClickListener(
+    public void addListenerOnButton (){
+        go_back = (Button)findViewById(R.id.button2);
+        go_back.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent("com.example.moneysplitter.Registration");
+                        Intent intent = new Intent ("com.example.moneysplitter.Events");
                         startActivity(intent);
                     }
                 }
         );
 
-        NextEvents.setOnClickListener(
+        go_new_position = (Button)findViewById(R.id.button8);
+        go_new_position.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent("com.example.moneysplitter.Events");
+                        Intent intent = new Intent ("com.example.moneysplitter.NewPosition");
                         startActivity(intent);
                     }
                 }
         );
-    };
+    }
 }

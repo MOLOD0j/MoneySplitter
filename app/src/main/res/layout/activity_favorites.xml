@@ -57,7 +57,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/Event"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
@@ -65,7 +65,7 @@
         app:srcCompat="@android:drawable/ic_dialog_dialer" />
 
     <ImageButton
-        android:id="@+id/Profile"
+        android:id="@+id/ProfFav"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
