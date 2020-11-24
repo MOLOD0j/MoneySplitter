@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.NetworkResponse;
@@ -73,8 +74,9 @@ public class LoginIn extends AppCompatActivity {
                         startActivity(intent);
                     }, error -> { // если получен ответ от сервера и он говорит что ошибка
                         Log.e("VOLLEY", error.toString());
-                        //todo добавить запись на жкране что логин\пароль не вырные
-
+                        Toast.makeText(
+                                LoginIn.this, "Невырный логин или пароль", Toast.LENGTH_LONG
+                        ).show();
                     }) {
                         @Override
                         public String getBodyContentType() { // формат запроса
@@ -82,7 +84,7 @@ public class LoginIn extends AppCompatActivity {
                         }
 
                         @Override
-                        public byte[] getBody() throws AuthFailureError { //если есть соединение с сервером добавить в тело запроса данные
+                        public byte[] getBody() { //если есть соединение с сервером добавить в тело запроса данные
                             try {
                                 return requestBody == null ? null : requestBody.getBytes("utf-8");
                             } catch (UnsupportedEncodingException uee) {
@@ -106,8 +108,6 @@ public class LoginIn extends AppCompatActivity {
                 }
         );
     }
-
-    ;
 
     public EditText getLogin() {
         return login;

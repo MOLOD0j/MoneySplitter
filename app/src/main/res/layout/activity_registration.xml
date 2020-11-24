@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/FName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/SecName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -67,10 +67,10 @@
         android:hint="Фамилия"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/FName" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/Email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -79,10 +79,10 @@
         android:hint="Email"
         android:inputType="textEmailAddress"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/SecName" />
 
     <EditText
-        android:id="@+id/editTextPhone2"
+        android:id="@+id/Phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -91,22 +91,22 @@
         android:hint="Телефон"
         android:inputType="phone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+        app:layout_constraintTop_toBottomOf="@+id/Email" />
 
     <EditText
-        android:id="@+id/editTextNumberPassword"
+        android:id="@+id/PassOriginal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="18dp"
         android:layout_marginBottom="26dp"
         android:ems="10"
         android:inputType="numberPassword"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumberPassword2"
+        app:layout_constraintBottom_toTopOf="@+id/PassCopy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView7" />
 
     <EditText
-        android:id="@+id/editTextNumberPassword2"
+        android:id="@+id/PassCopy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -121,8 +121,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Придумайте пароль:"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumberPassword"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumberPassword"
+        app:layout_constraintBaseline_toBaselineOf="@+id/PassOriginal"
+        app:layout_constraintEnd_toStartOf="@+id/PassOriginal"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -133,7 +133,7 @@
         android:layout_marginBottom="38dp"
         android:text="Повторите пароль:"
         app:layout_constraintBottom_toTopOf="@+id/textView9"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumberPassword2"
+        app:layout_constraintEnd_toStartOf="@+id/PassCopy"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -144,7 +144,7 @@
         android:layout_marginStart="2dp"
         android:layout_marginBottom="8dp"
         android:text="Информация о профиле:"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton"
+        app:layout_constraintBottom_toTopOf="@+id/male"
         app:layout_constraintStart_toStartOf="@+id/textView11" />
 
     <TextView
@@ -158,16 +158,16 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <RadioButton
-        android:id="@+id/radioButton"
+        android:id="@+id/male"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="7dp"
         android:text="Муж."
-        app:layout_constraintBottom_toTopOf="@+id/radioButton2"
-        app:layout_constraintStart_toStartOf="@+id/radioButton2" />
+        app:layout_constraintBottom_toTopOf="@+id/female"
+        app:layout_constraintStart_toStartOf="@+id/female" />
 
     <RadioButton
-        android:id="@+id/radioButton2"
+        android:id="@+id/female"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -186,7 +186,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/year"
         android:layout_width="114dp"
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
