@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DEFCFF"
     tools:context=".RegistrationAddPhoto">
 
     <TextView
@@ -12,7 +13,7 @@
         android:layout_height="0dp"
 
         android:layout_marginBottom="69dp"
-        android:background="#732BF1"
+        android:background="#58A8C1"
         android:freezesText="true"
         android:gravity="center"
         android:text="Регистрация"
@@ -35,6 +36,7 @@
         android:layout_marginBottom="30dp"
         android:gravity="center"
         android:text="Пожалуйста, добавьте свою фотографию"
+        android:textColor="#212121"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button13"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,6 +50,7 @@
         android:layout_marginStart="34dp"
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="18dp"
+        android:backgroundTint="#58A8C1"
         android:text="Сделать фото"
         app:layout_constraintBottom_toTopOf="@+id/button15"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,35 +64,38 @@
         android:layout_marginStart="34dp"
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="290dp"
+        android:backgroundTint="#58A8C1"
         android:text="Загрусить с устройства"
-        app:layout_constraintBottom_toTopOf="@+id/button16"
+        app:layout_constraintBottom_toTopOf="@+id/NextEvents"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button13" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/NextEvents"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="39dp"
+        android:backgroundTint="#58A8C1"
         android:text="Закончить"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button17"
+        app:layout_constraintStart_toEndOf="@+id/BackReg"
         app:layout_constraintTop_toBottomOf="@+id/button15" />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/BackReg"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="34dp"
         android:layout_marginEnd="88dp"
+        android:backgroundTint="#58A8C1"
         android:text="Назад"
-        app:layout_constraintBottom_toBottomOf="@+id/button16"
-        app:layout_constraintEnd_toStartOf="@+id/button16"
+        app:layout_constraintBottom_toBottomOf="@+id/NextEvents"
+        app:layout_constraintEnd_toStartOf="@+id/NextEvents"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button16" />
+        app:layout_constraintTop_toTopOf="@+id/NextEvents" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

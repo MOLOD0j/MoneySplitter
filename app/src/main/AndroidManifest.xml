@@ -9,8 +9,62 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MoneySplitter">
-        <activity android:name=".RegistrationAddPhoto"></activity>
-        <activity android:name=".Registration" />
+        <activity android:name=".LoginIn">
+            <intent-filter>
+                <action android:name="com.example.moneysplitter.LoginIn" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NewPosition">
+            <intent-filter>
+                <action android:name="com.example.moneysplitter.NewPosition" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Room">
+            <intent-filter>
+                <action android:name="com.example.moneysplitter.Room" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NewRoom">
+            <intent-filter>
+                <action android:name="com.example.moneysplitter.NewRoom" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Events">
+            <intent-filter>
+                <action android:name="com.example.moneysplitter.Events" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Profile">
+            <intent-filter>
+                <action android:name="com.example.moneysplitter.Profile" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegistrationAddPhoto">
+            <intent-filter>
+                <action android:name="com.example.moneysplitter.RegistrationAddPhoto" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Registration">
+            <intent-filter>
+                <action android:name="com.example.moneysplitter.Registration" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Favorites">
             <intent-filter>
                 <action android:name="com.example.moneysplitter.Favorites" />

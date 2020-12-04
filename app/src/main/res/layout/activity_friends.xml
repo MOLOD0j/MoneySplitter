@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DEFCFF"
     tools:context=".Friends">
 
     <TextView
@@ -12,7 +13,7 @@
         android:layout_height="51dp"
 
         android:layout_marginEnd="2dp"
-        android:background="#732BF1"
+        android:background="#58A8C1"
         android:freezesText="true"
         android:gravity="center"
         android:text="Друзья"
@@ -33,6 +34,8 @@
         android:ems="10"
         android:hint="Поиск друзей"
         android:inputType="textPersonName"
+        android:textColor="#212121"
+        android:textColorHint="#212121"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,6 +60,7 @@
         android:layout_marginStart="127dp"
         android:layout_marginEnd="128dp"
         android:layout_marginBottom="59dp"
+        android:backgroundTint="#58A8C1"
         android:text="Добавить друга"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
