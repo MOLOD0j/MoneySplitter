@@ -4,13 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:background="#DEFCFF"
+
     android:background="#FFFFFF"
+
     tools:context=".MainActivity"
     tools:ignore="ExtraText">
     android:background="#FFFFFF"
 
     <Button
         android:id="@+id/butInput"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="34dp"
+        android:backgroundTint="#58A8C1"
+        android:text="Вход"
+        app:layout_constraintBottom_toTopOf="@+id/registration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/registration"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="298dp"
+        android:backgroundTint="#58A8C1"
+        android:text="Регистрация"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butInput" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="251dp"
+        android:background="#58A8C1"
+
         android:layout_width="159dp"
         android:layout_height="61dp"
         android:layout_marginStart="130dp"
@@ -63,12 +102,16 @@
         android:layout_height="53dp"
 
         android:background="#732BF1"
+
         android:freezesText="true"
         android:gravity="center"
         android:text="Вход"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/butInput"
+
         app:layout_constraintBottom_toBottomOf="parent"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageButton"

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+android:background="#DEFCFF"
     tools:context=".NewRoom">
 
     <TextView
@@ -12,12 +13,14 @@
         android:layout_height="0dp"
 
         android:layout_marginBottom="61dp"
+        android:background="#58A8C1"
         android:background="#732BF1"
         android:freezesText="true"
         android:gravity="center"
         android:text="Новая комната"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
         app:layout_constraintBottom_toTopOf="@+id/FName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -31,6 +34,9 @@
         android:layout_width="94dp"
         android:layout_height="58dp"
         android:layout_marginBottom="30dp"
+
+        android:backgroundTint="#58A8C1"
+
         android:text="Готово"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,14 +46,25 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
+        android:id="@+id/editTextTextPersonName"
         android:id="@+id/FName"
+
         android:layout_width="259dp"
         android:layout_height="0dp"
         android:layout_marginStart="31dp"
         android:layout_marginBottom="31dp"
+
+        android:background="#F6FEFF"
         android:ems="10"
         android:hint="Название новой комнаты"
         android:inputType="textPersonName"
+        android:textColor="#212121"
+        android:textColorHint="#212121"
+
+        android:ems="10"
+        android:hint="Название новой комнаты"
+        android:inputType="textPersonName"
+
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -58,6 +75,9 @@
         android:layout_height="0dp"
         android:layout_marginStart="31dp"
         android:layout_marginBottom="68dp"
+
+        android:backgroundTint="#58A8C1"
+
         android:text="Добавить друга"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,6 +88,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="292dp"
+
+        android:backgroundTint="#58A8C1"
+
         android:text="Добавить позицию"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView6"
@@ -80,6 +103,12 @@
         android:layout_marginStart="31dp"
         android:layout_marginBottom="30dp"
         android:text="Участники:"
+
+        android:textColor="#212121"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
         app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/FName" />
@@ -91,6 +120,10 @@
         android:layout_marginStart="31dp"
         android:layout_marginBottom="16dp"
         android:text="Позиции:"
+
+        android:textColor="#212121"
+        android:textColorHint="#212121"
+
         app:layout_constraintBottom_toTopOf="@+id/button8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button6" />

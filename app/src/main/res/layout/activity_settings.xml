@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DEFCFF"
     tools:context=".Settings">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
 
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="7dp"
-        android:background="#732BF1"
+        android:layout_marginBottom="33dp"
+        android:background="#58A8C1"
         android:freezesText="true"
         android:gravity="center"
         android:text="Настройки"
@@ -29,6 +29,7 @@
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:backgroundTint="#58A8C1"
         android:text="Редкатировать профиль"
         app:layout_constraintBottom_toTopOf="@+id/butInput"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,13 +37,24 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
+        android:id="@+id/butInput"
         android:id="@+id/registration"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="изменить язык"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        android:backgroundTint="#58A8C1"
+        android:text="Настройки оповещений"
+        app:layout_constraintBottom_toTopOf="@+id/registration"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/registration"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#58A8C1"
+        android:text="изменить язык"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/butInput" />
 
     <Button
@@ -53,13 +65,14 @@
         app:layout_constraintBottom_toTopOf="@+id/registration"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/butInput" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="461dp"
+        android:layout_marginBottom="433dp"
+        android:backgroundTint="#58A8C1"
         android:text="стереть все данные"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

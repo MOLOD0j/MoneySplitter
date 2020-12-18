@@ -4,35 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DEFCFF"
     tools:context=".Registration">
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:text="Возраст:"
-        app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        android:textColor="#212121"
+        android:textColorHint="#212121"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName5"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName5"
+        app:layout_constraintStart_toEndOf="@+id/textView11" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="409dp"
-        android:layout_height="53dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
 
-        android:background="#732BF1"
+        android:layout_marginBottom="17dp"
+        android:background="#58A8C1"
         android:freezesText="true"
         android:gravity="center"
         android:text="Регистрация"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         tools:ignore="HardcodedText,UnknownId" />
 
     <TextView
@@ -40,12 +42,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginBottom="18dp"
         android:text="Личные данные:"
+        android:textColor="#212121"
+        android:textColorHint="#212121"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="218dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="21dp"
+        android:background="#F6FEFF"
         android:id="@+id/FName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,10 +64,49 @@
         android:ems="10"
         android:hint="Имя"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#212121"
+        android:textColorHint="#212121"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="27dp"
+        android:background="#F6FEFF"
+        android:ems="10"
+        android:hint="Фамилия"
+        android:inputType="textPersonName"
+        android:textColor="#212121"
+        android:textColorHint="#212121"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress2"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPhone2"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:background="#F6FEFF"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#212121"
+        android:textColorHint="#212121"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPhone2"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPhone2"
+        app:layout_constraintStart_toStartOf="@+id/editTextPhone2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+    <EditText
+        android:id="@+id/editTextPhone2"
+        android:layout_width="216dp"
+        android:layout_height="0dp"
         android:id="@+id/SecName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -86,74 +135,134 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginBottom="57dp"
+        android:background="#F6FEFF"
         android:ems="10"
         android:hint="Телефон"
         android:inputType="phone"
+        android:textColor="#212121"
+        android:textColorHint="#212121"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Email" />
 
     <EditText
+
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="38dp"
+
         android:id="@+id/PassOriginal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="18dp"
+
         android:layout_marginBottom="26dp"
+        android:background="#F6FEFF"
         android:ems="10"
         android:inputType="numberPassword"
+
+        android:textColor="#212121"
+        android:textColorHint="#212121"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberPassword2"
         app:layout_constraintBottom_toTopOf="@+id/PassCopy"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView7" />
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone2" />
 
     <EditText
+
+        android:id="@+id/editTextNumberPassword2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="45dp"
+        android:background="#F6FEFF"
         android:id="@+id/PassCopy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="numberPassword"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+        android:textColor="#212121"
+        android:textColorHint="#212121"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView8" />
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
         android:text="Придумайте пароль:"
+
+        android:textColor="#212121"
+        android:textColorHint="#212121"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumberPassword"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberPassword"
+
         app:layout_constraintBaseline_toBaselineOf="@+id/PassOriginal"
         app:layout_constraintEnd_toStartOf="@+id/PassOriginal"
+
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="38dp"
         android:text="Повторите пароль:"
+
+        android:textColor="#212121"
+        android:textColorHint="#212121"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumberPassword2"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberPassword2"
+
         app:layout_constraintBottom_toTopOf="@+id/textView9"
         app:layout_constraintEnd_toStartOf="@+id/PassCopy"
         app:layout_constraintHorizontal_chainStyle="packed"
+
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="16dp"
         android:text="Информация о профиле:"
+
+        android:textColor="#212121"
+        android:textColorHint="#212121"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName5"
+        app:layout_constraintStart_toStartOf="parent" />
+
         app:layout_constraintBottom_toTopOf="@+id/male"
         app:layout_constraintStart_toStartOf="@+id/textView11" />
+
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
-        android:layout_marginBottom="146dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="82dp"
         android:text="Пол:"
+        android:textColor="#212121"
+        android:textColorHint="#212121"
+        app:layout_constraintBottom_toTopOf="@+id/Next"
+        app:layout_constraintEnd_toStartOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -181,8 +290,20 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:backgroundTint="#58A8C1"
         android:text="Продолжить"
         app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup2"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="36dp"
+        android:background="#F6FEFF"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
@@ -190,9 +311,44 @@
         android:layout_width="114dp"
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
+
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="@+id/textView14"
-        app:layout_constraintStart_toEndOf="@+id/textView14" />
+        android:textColor="#212121"
+        android:textColorHint="#212121"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Next"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView9">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Муж."
+            android:textColor="#212121"
+            android:textColorHint="#212121" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Жен."
+            android:textColor="#212121"
+            android:textColorHint="#212121" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

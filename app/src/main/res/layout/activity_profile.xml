@@ -4,12 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DEFCFF"
+
     tools:context=".Profile">
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="16dp"
+        android:text="События"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Favorites"
+        app:layout_constraintStart_toStartOf="@+id/Age" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        android:background="#58A8C1"
         android:layout_marginTop="2dp"
         android:layout_marginEnd="71dp"
         android:text="События"
@@ -32,6 +50,7 @@
         android:text="Профиль"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
+
         app:layout_constraintBottom_toTopOf="@+id/FirstName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,10 +61,17 @@
         android:id="@+id/Favorites"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
+
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
     <TextView
@@ -55,6 +81,9 @@
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="16dp"
         android:text="Избранное"
+
+        android:textColor="#000000"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -62,8 +91,13 @@
         android:id="@+id/Event"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+
         android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView10"
+
         app:layout_constraintStart_toStartOf="@+id/textView10"
         app:srcCompat="@android:drawable/ic_dialog_dialer" />
 
@@ -71,10 +105,16 @@
         android:id="@+id/Prof"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+
         android:layout_marginStart="4dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintStart_toStartOf="@+id/textView3"
+
         app:srcCompat="@android:drawable/ic_menu_my_calendar" />
 
     <TextView
@@ -84,11 +124,25 @@
         android:layout_marginStart="42dp"
         android:layout_marginBottom="16dp"
         android:text="Профиль"
+
+        android:textColor="#000000"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
+
+        android:layout_width="0dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="43dp"
+        app:layout_constraintBottom_toTopOf="@+id/Friends"
+        app:layout_constraintEnd_toStartOf="@+id/Age"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
         android:layout_width="160dp"
         android:layout_height="151dp"
         android:layout_marginStart="2dp"
@@ -102,6 +156,147 @@
 
     <TextView
         android:id="@+id/FirstName"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="52dp"
+        android:gravity="center|right"
+        android:text="Хабиб "
+        android:textColor="#212121"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/CntAge"
+        app:layout_constraintEnd_toStartOf="@+id/LastName"
+        app:layout_constraintStart_toEndOf="@+id/Age"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/LastName"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:gravity="center|left"
+        android:text="Бип-Бипов"
+        android:textColor="#212121"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/FirstName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/FirstName" />
+
+    <TextView
+        android:id="@+id/Gender"
+        android:layout_width="189dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="42dp"
+        android:gravity="center|right"
+        android:text="Пол:"
+        android:textColor="#212121"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/CntAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/MorW"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:text="мужской"
+        android:textColor="#212121"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Gender"
+        app:layout_constraintEnd_toEndOf="@+id/LastName"
+        app:layout_constraintStart_toEndOf="@+id/Gender" />
+
+    <TextView
+        android:id="@+id/Age"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="154dp"
+        android:gravity="center|right"
+        android:text="Возраст:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/FirstName"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CntAge"
+        android:layout_width="99dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginEnd="99dp"
+        android:autoText="false"
+        android:gravity="center"
+        android:text="32 "
+        android:textColor="#212121"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Age"
+        app:layout_constraintEnd_toEndOf="@+id/MorW"
+        app:layout_constraintStart_toStartOf="@+id/Age" />
+
+    <Button
+        android:id="@+id/Friends"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="54dp"
+        android:backgroundTint="#58A8C1"
+        android:text="Друзья"
+        app:layout_constraintBottom_toBottomOf="@+id/ExpensesIncome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Age" />
+
+    <Button
+        android:id="@+id/ExpensesIncome"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginBottom="106dp"
+        android:backgroundTint="#58A8C1"
+        android:text="Расходы и Доходы"
+        app:layout_constraintBottom_toTopOf="@+id/FAQ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Age" />
+
+    <Button
+        android:id="@+id/Settings"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="53dp"
+        android:backgroundTint="#58A8C1"
+        android:text="Настройки"
+        app:layout_constraintBottom_toTopOf="@+id/FAQ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ExpensesIncome" />
+
+    <Button
+        android:id="@+id/FAQ"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="257dp"
+        android:backgroundTint="#58A8C1"
+        android:text="FAQ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Feedback"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#58A8C1"
+        android:text="Обратная связь"
+        app:layout_constraintBottom_toBottomOf="@+id/FAQ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Settings" />
         android:layout_width="123dp"
         android:layout_height="51dp"
         android:layout_marginStart="3dp"
