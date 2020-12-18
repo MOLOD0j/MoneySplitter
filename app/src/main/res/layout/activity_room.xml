@@ -9,20 +9,37 @@
 
     <TextView
         android:id="@+id/textView"
+
         android:layout_width="0dp"
         android:layout_height="0dp"
 
         android:layout_marginBottom="25dp"
         android:background="#58A8C1"
+
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="508dp"
+        android:background="#732BF1"
+
         android:freezesText="true"
         android:gravity="center"
         android:text="Комната"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
+
         app:layout_constraintBottom_toTopOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintBottom_toTopOf="@+id/BackStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+
         tools:ignore="HardcodedText,UnknownId" />
 
 
@@ -30,20 +47,34 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_marginBottom="26dp"
         android:text="Название комнаты"
         android:textColor="#212121"
         app:layout_constraintBottom_toTopOf="@+id/button9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="35dp"
+        android:text="Название комнаты"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintEnd_toEndOf="@+id/button9"
+
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/button9"
+
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="14dp"
         android:backgroundTint="#58A8C1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+
         android:text="Участники"
         app:layout_constraintBottom_toTopOf="@+id/button10"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,12 +83,20 @@
 
     <Button
         android:id="@+id/button10"
+
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="374dp"
         android:backgroundTint="#58A8C1"
         android:text="Позиции"
         app:layout_constraintBottom_toTopOf="@+id/BackStart"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="484dp"
+        android:text="Позиции"
+        app:layout_constraintBottom_toBottomOf="parent"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button9" />
@@ -66,12 +105,17 @@
         android:id="@+id/BackStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_marginBottom="52dp"
         android:backgroundTint="#58A8C1"
+        android:layout_marginBottom="122dp"
+
         android:text="Редактировать"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toBottomOf="@+id/button10" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

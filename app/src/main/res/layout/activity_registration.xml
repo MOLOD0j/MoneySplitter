@@ -56,6 +56,11 @@
         android:layout_height="0dp"
         android:layout_marginBottom="21dp"
         android:background="#F6FEFF"
+        android:id="@+id/FName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
         android:ems="10"
         android:hint="Имя"
         android:inputType="textPersonName"
@@ -102,6 +107,33 @@
         android:id="@+id/editTextPhone2"
         android:layout_width="216dp"
         android:layout_height="0dp"
+        android:id="@+id/SecName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Фамилия"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FName" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SecName" />
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="57dp"
         android:background="#F6FEFF"
@@ -112,31 +144,45 @@
         android:textColorHint="#212121"
         app:layout_constraintBottom_toTopOf="@+id/editTextNumberPassword"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+        app:layout_constraintTop_toBottomOf="@+id/Email" />
 
     <EditText
+
         android:id="@+id/editTextNumberPassword"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="38dp"
+
+        android:id="@+id/PassOriginal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+
         android:layout_marginBottom="26dp"
         android:background="#F6FEFF"
         android:ems="10"
         android:inputType="numberPassword"
+
         android:textColor="#212121"
         android:textColorHint="#212121"
         app:layout_constraintBottom_toTopOf="@+id/editTextNumberPassword2"
+        app:layout_constraintBottom_toTopOf="@+id/PassCopy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone2" />
 
     <EditText
+
         android:id="@+id/editTextNumberPassword2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="45dp"
         android:layout_marginBottom="45dp"
         android:background="#F6FEFF"
+        android:id="@+id/PassCopy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="numberPassword"
         android:textColor="#212121"
@@ -153,10 +199,15 @@
         android:layout_marginStart="21dp"
         android:layout_marginEnd="21dp"
         android:text="Придумайте пароль:"
+
         android:textColor="#212121"
         android:textColorHint="#212121"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumberPassword"
         app:layout_constraintEnd_toStartOf="@+id/editTextNumberPassword"
+
+        app:layout_constraintBaseline_toBaselineOf="@+id/PassOriginal"
+        app:layout_constraintEnd_toStartOf="@+id/PassOriginal"
+
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -166,10 +217,16 @@
         android:layout_marginStart="37dp"
         android:layout_marginEnd="16dp"
         android:text="Повторите пароль:"
+
         android:textColor="#212121"
         android:textColorHint="#212121"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumberPassword2"
         app:layout_constraintEnd_toStartOf="@+id/editTextNumberPassword2"
+
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toStartOf="@+id/PassCopy"
+        app:layout_constraintHorizontal_chainStyle="packed"
+
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -180,11 +237,16 @@
         android:layout_marginEnd="70dp"
         android:layout_marginBottom="16dp"
         android:text="Информация о профиле:"
+
         android:textColor="#212121"
         android:textColorHint="#212121"
         app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName5"
         app:layout_constraintStart_toStartOf="parent" />
+
+        app:layout_constraintBottom_toTopOf="@+id/male"
+        app:layout_constraintStart_toStartOf="@+id/textView11" />
+
 
     <TextView
         android:id="@+id/textView11"
@@ -201,6 +263,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
 
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:text="Муж."
+        app:layout_constraintBottom_toTopOf="@+id/female"
+        app:layout_constraintStart_toStartOf="@+id/female" />
+
+    <RadioButton
+        android:id="@+id/female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Жен."
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        tools:layout_editor_absoluteX="77dp" />
+
     <Button
         android:id="@+id/Next"
         android:layout_width="wrap_content"
@@ -210,6 +293,7 @@
         android:backgroundTint="#58A8C1"
         android:text="Продолжить"
         app:layout_constraintBottom_toBottomOf="parent"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/radioGroup2"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
@@ -220,6 +304,14 @@
         android:layout_height="0dp"
         android:layout_marginEnd="36dp"
         android:background="#F6FEFF"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/year"
+        android:layout_width="114dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="#212121"

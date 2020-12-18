@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:background="#DEFCFF"
+
     tools:context=".NewPosition">
 
     <TextView
@@ -13,6 +15,7 @@
         android:layout_height="0dp"
 
         android:layout_marginBottom="53dp"
+
         android:background="#58A8C1"
         android:freezesText="true"
         android:gravity="center"
@@ -21,6 +24,15 @@
         android:textColorHint="#212121"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+
+        android:background="#732BF1"
+        android:freezesText="true"
+        android:gravity="center"
+        android:text="Новая позиция"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/SecName"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,7 +45,9 @@
         android:layout_width="103dp"
         android:layout_height="58dp"
         android:layout_marginBottom="49dp"
+
         android:backgroundTint="#58A8C1"
+
         android:text="Готово"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,16 +57,22 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/SecName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginBottom="62dp"
+
         android:background="#F6FEFF"
         android:ems="10"
         android:hint="Название позиции"
         android:inputType="textPersonName"
         android:textColor="#212121"
         android:textColorHint="#212121"
+        android:ems="10"
+        android:hint="Название позиции"
+        android:inputType="textPersonName"
+
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -63,6 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginBottom="471dp"
+
         android:background="#F6FEFF"
         android:ems="10"
         android:hint="Сумма"
@@ -72,5 +93,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+        android:ems="10"
+        android:hint="Сумма"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SecName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
